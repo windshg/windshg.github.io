@@ -2,4 +2,4 @@
 layout: post_page
 title: Machine Learning
 ---
-What is Machine Learning?
+This page focuses on introduction to common algorithm and emerging trend analysis for Machine Learning.
