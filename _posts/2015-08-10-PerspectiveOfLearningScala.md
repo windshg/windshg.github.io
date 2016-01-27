@@ -1,5 +1,4 @@
 ---
 layout: post_page
-title: Machine Learning
+title: Perspective of Learning Scala
 ---
-This page focuses on introduction to common algorithm and emerging trend analysis for Machine Learning.
