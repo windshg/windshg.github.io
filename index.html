@@ -1,75 +1,82 @@
 ---
 layout: default
-title: All Blue
 ---
-<!-- Content
-    ================================================== -->
-  <div class="top-strip"></div>
-  <div class="content">
-    <main class="container">
-    	<div class="row-fluid">
-    		<section class="content">
-    		  <h1>All Blue</h1>
-    		</section>
-    		<ul class="entries">
-    		{% for post in paginator.posts %}
-    		  <li>
-    		    <a href="{{ post.url }}">
-                      <span>{{ post.date | date: "%d %B %Y" }}</span>
-    		        <h3>{{ post.title }}</h3>
-                      <div>{{ post.content |truncatehtml | truncatewords: 30 }}</div>
-    		    </a>
-    		  </li>
-    		{% endfor %}
-    		</ul>
-    	</div>
-      <hr>
-      <div id="post-pagination">
-        {% if paginator.previous_page %}
-        <p class="prev">
-          {% if paginator.previous_page == 1 %}
-          <a href="/">Previous</a>
-          {% else %}
-          <a href="/page{{paginator.previous_page}}"> Previous</a>
-          {% endif %}
-        </p>
-        {% else %}
-<!--         <p class="prev disabled">
-          <span>Previous</span>
-        </p> -->
-        {% endif %}
 
-        <ul class="pages">
-          <li class="page">
-            {% if paginator.page == 1 %}
-<!--             <span class="current-page">1</span> -->
-            {% else %}
-            <a href="/">1</a>
-            {% endif %}
-          </li>
 
-          {% for count in (2..paginator.total_pages) %}
-          <li class="page">
-            {% if count == paginator.page %}
-            <span class="current-page">{{count}}</span>
-            {% else %}
-            <a href="/page{{count}}">{{count}}</a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
 
-        {% if paginator.next_page %}
-        <p class="next">
-          <a href="/page{{paginator.next_page}}">Next</a>
-        </p>
-        {% else %}
-<!--         <p class="next disabled">
-          <span>Next</span>
-        </p> -->
-        {% endif %}
-      </div>
 
-    </main>
-  </div>
+<div class="row">
 
+<div class="large-7 columns samping">
+ 
+    {% for post in paginator.posts %}
+     <article class="post tag-speeches">
+         <div style="padding: 20px;">
+    <header class="post-header">
+        <h2 class="post-title"><a id="route" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>{{ post.content | strip_html | truncatewords:45}} <a id="route" class="read-more" href="{{ post.url | prepend: site.baseurl }}">»</a></p>
+    </section>
+    
+    </div>
+    <footer class="post-meta" style="    background: #00bc8c;
+    padding: 10px 0 0px 20px;">
+        
+        
+        <p class="post-tags"><i class="typico typcn typcn-tags" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> {% include post-tags.html %}</p>
+        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}"><i class="typico typcn typcn-calendar-outline" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> {{ post.date | date: "%b %-d, %Y" }}</time>
+        <p class="post-date"><i class="typico typcn typcn-messages" style="    font-size: 28px;
+    position: relative;
+    top: 1px;
+    font-size:15px"></i> <a id="route" class="disqus-comment-count"  href="{{ post.url | prepend: site.baseurl }}#disqus_thread" style="color:#fff"> 0 Comments</a></p>
+    </footer>
+</article>
+    {% endfor %}
+  
+
+  <!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a id="route" href="{{ paginator.previous_page_path }}" class="previous"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+    position: relative;
+   
+    "></i> Previous</a>
+  {% else %}
+    <span class="previous" align="left"><i class="typcn typcn-chevron-left-outline" style="    font-size: 14px;
+    position: relative;
+    
+    "></i> Previous</span>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a id="route" href="{{ paginator.next_page_path }}" class="next">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+    position: relative;
+  
+    "></i></a>
+  {% else %}
+    <span class="next" align="right">Next <i class="typcn typcn-chevron-right-outline" style="    font-size: 14px;
+    position: relative;
+    
+    "></i></span>
+  {% endif %}
+</div>
+
+
+
+
+
+
+</div>
+
+
+{% include widgets.html %}
+
+
+</div>
