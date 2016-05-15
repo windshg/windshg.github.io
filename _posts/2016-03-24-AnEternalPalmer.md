@@ -10,6 +10,11 @@ Dramatically Li had never lost himself as an ideal poet after going through such
 
 Abundant memory coming along with Li's return lead to his introspection for society. As an experimental literary form, 《Blue Plateau》acquired public attention during that time while it never make an impact on the whole history of literature, just like Li, probably because of the absence of him. Apparently the radical social environment and the popular third-generation poetry of the day and experience of Li himself wouldn't comprehensively allow this kind of literary form to spread out. Li kept revealing reminiscence and the feeling about politics, economy and personal situation in his research on 1980s in memory of the missing collectivism and liberation. Anyway, the return of poets like Li means that the 1980s never actually ends which we should always appreciate.
 
+The first section detailedly describe Li's exile and return respectively. The overwhelming disappointment of exile is emphasized by retrospecting his supreme personal honor in 1980s while anxiety, confusion and homesick float around to express the desperate feeling for return.
 
+The second section describe the significance of Li's return in terms of his identity, topic and literary form. He had went through crisis of identity to become a so-called freeman. The topic of lost and exploration penetrated into all his works especially for 《Patient of the Centry》. For literary form, Li turned from a poet into novelist keeping his poetic all the way to present the specific idealism and heroism for 1980s.
 
+The third section retrospect the 1980s in Li's opinion. Compared to corresponding literature in that times, topic of Li's works was apt to the 
+early dim-moonlight poet, which is prominent by the rapid change of social environment in 1990s leading to large-scale transition of most poets.
 
+At the end is the discussion about multiple problems of the return of the 1980s by analyzing different styles of return to tease out the perspectives like introspection of academic and reminiscence of intellectual while the one-sidedness of introspection of different topics are exposed. During the discussion Li found out the historical formation he belonged to so as to indicate his deserving reputation in the whole history of literature.
